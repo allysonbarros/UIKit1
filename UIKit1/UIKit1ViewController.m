@@ -41,4 +41,12 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)onEnter:(id)sender {
+    [entrada resignFirstResponder];
+    NSString *texto = [[NSString alloc] initWithFormat:@"%@ %@", [entrada text], [textos text] ];
+    [textos setText:texto];
+    [entrada setText:@""];
+    [texto release];
+}
+
 @end

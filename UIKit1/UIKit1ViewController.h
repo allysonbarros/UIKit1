@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIKit1ViewController : UIViewController
+@interface UIKit1ViewController : UIViewController {
+    IBOutlet UITextView *textos;
+    IBOutlet UITextField *entrada;
+}
+
+-(IBAction)onEnter:(id)sender;
 
 @end
